@@ -47,15 +47,10 @@ function toArray(var1, var2, var3) {
     return numbersArray;
 }
 console.log (1,2,3);
-console.log (toArray(1, 2, 3));
-var myArray=toArray(5,6,7);
-console.log (myArray);
+// console.log (toArray(1, 2, 3));
+// var myArray=toArray(5,6,7);
+// console.log (myArray);
 
-function chopin (inputArray) {
-    for (var i = 0; i < inputArray.length; i++) {
-        console.log(inputArray [i]);
-    }
-}
 
 
 
@@ -138,14 +133,12 @@ sun1("asdfsunasdf");
 //#10
 
 function getSeconds(minutes) {
-    minutes.substring (0, 1)*60;
-    minutes.substring (3, 4);
-    console.log (minutes);
+    console.log (minutes.substring(0,2) + minutes.substring(3,4));
 }
 
 getSeconds('24:33');
 
-//etSeconds('01:30') should return 90
+//getSeconds('01:30') should return 90
 //getSeconds('10:25') should return 625
 
 

@@ -1,48 +1,154 @@
-/* function victimsBox() {
-            if (button onclick="victimsBox()">victimInfo/button) {
-                prompt ("Enter number of victims.")
-            };
+/*function firstPrompt (numberVictims){*/
+    var numberVictims = prompt("Please enter number of victims.");
+//    var numberVolunteers = prompt("Please enter number of volunteers.");
+    numberVictims= parseInt(numberVictims);
+//    numberVolunteers=parseInt(numberVolunteers);
+    var victimInfo2 = [];
+//    var victimInfo3 = [];
+  
+  
+  
+  
+for (var i=0; i< numberVictims; i++) {
+    var name = prompt("Enter disaster victim name");
+    var address = prompt("Enter disaster victim address");
+    var number = prompt("Enter disaster victim phone number");
+    var info = {name:name, address:address, number:number};
+    victimInfo2.push(info);
+}
+
+
+console.log(victimInfo2);
+
+
+
+var numberVolunteers = prompt("Please enter number of volunteers.");
+numberVolunteers=parseInt(numberVolunteers);
+var victimInfo3 = [];
+
+
+
+for (var i=0; i< numberVolunteers; i++) {
+    var name1 = prompt("Enter volunteer name");
+    var address1 = prompt("Enter volunteer address");
+    var number1 = prompt("Enter volunteer phone number");
+    var info1 = {name:name1, address:address1, number:number1};
+    victimInfo3.push(info1);
+}
+
+
+console.log(victimInfo3);
+
+
+
+ function alertInfo () {
+     console.log(victimInfo2);
+     console.log(victimInfo3);
+ }
+
+alert("Victim" + victimInfo2 + "Volunteer" + victimInfo3);
+
+
+
+
+
+
+
+
+/*function vicFunc() {
+
+var victimBox = prompt("Please enter name of victim")
+
+if (victimBox != null) {
+    document.getElementById("victimBox").innerHTML =
+    "victimBox";
+}
+
+}
+*/
+
+
+
+// <p id="demo"></p>
+
+// <script>
+// function myFunction() {
+//     var person = prompt("Please enter your name", "Harry Potter");
+//     if (person != null) {
+//         document.getElementById("demo").innerHTML =
+//         "Hello " + person + "! How are you today?";
+//     }
+// }
+// </script>
+
+
+
+// if(getElementById("victimBox") > null) {
+//     document.getElementById("victimBox").innerHTML=
+//     "Please enter address?";
+// };
+
+
+
+// function vicFunc () {
+//     var 
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  function victimsBox() {
+//             if (button onclick="victimsBox()">victimInfo/button) {
+//                 prompt ("Enter number of victims.")
+//             };
     
 
-*/
+
+// /* function doSomething(x, y) {
+// }
+// doSomething(3, 4);
+
+// document.write(doSomething);
+// */
 
 
 
+// document.write("<h1>Main title</h1>");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function doSomething(x, y) {
-}
-doSomething(3, 4);
-
-document.write(doSomething);
-*/
-
-
-/*
-
-document.write("<h1>Main title</h1>");
-
-
-/*
-function practice() {
-    for (var i = 0; i <= 10; i++) {
-        document.write(i);
-    }
-}
+// function practice() {
+//     for (var i = 0; i <= 10; i++) {
+//         document.write(i);
+//     }
+// }
 
 
 
@@ -72,4 +178,22 @@ function practice() {
 
 
 
-if... number is entered into box.. 
+
+
+
+
+
+
+
+
+
+
+
+//  If prompt box is greater than null, list user input number under victims box, prompt user variable to print 3 seperate prompt boxes ("enter name, enter address, enter phone number, ") for number of victims
+// entered.
+//  Print each user input after it is entered.   User input is displayed with 1 <br> between each disaster victim input.  Create a break space every time 3 boxes are entered, or 1 of each type of prompt box 
+//  is entered.
+
+// Copy/continue with volunteers
+
+//  Take and compare victim and volunteer info, push into alert box for "Victim/Volunteer info button"
