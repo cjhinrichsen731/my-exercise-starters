@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html ng-app="AngularIntro">
+
+<head>
+    <title> Intro to Angular</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="ngIntoToAngular.js"></script>
+</head>
+
+<body>
+    <div ng-controller="AngButton as cCtrl">
+        <button ng-click="cCtrl.angConsole()">Click me!</button>
+        <h1 ng-if="cCtrl.h1">
+          <p>!!!!!!!</p>   
+        </h1>
+       
+        <button ng-click="cCtrl.angList()">Click me as well!</button>
+        <div ng-if="cCtrl.div">
+            <p>!!!!!</p>
+            <ol>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+            </ol>
+         </div>
+          
+        
+
+    </div>
+</body>
+
+</html>
