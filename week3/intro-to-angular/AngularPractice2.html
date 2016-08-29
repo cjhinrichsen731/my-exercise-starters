@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="superHeroes">
+  <head>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js></script>
+    <script src="AngularPractice2.js"></script>
+  </head>
+      <body>
+        <div ng-controller="TheAvengers as avengers">
+          <h1> {{ avengers.title }} </h1>
+          <input type="text" ng-model="avengers.newAvengers" placeholder="Add your hero!">
+          <button ng-click-"avengers.addNewHero()">Add</button>
+        </div>
+        <ol>
+          <li ng-repeat-"avenger in avengers.heroes">{{ avenger }}</li>
+          <!-- <li>{{avengers.newAvenger}}</li> -->
+        </ol>
+      </body>
+</html>
